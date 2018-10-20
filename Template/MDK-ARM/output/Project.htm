@@ -1,0 +1,3082 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\output\Project.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\output\Project.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Sat Oct 20 13:48:24 2018
+<BR><P>
+<H3>Maximum Stack Usage =        220 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+__rt_entry_main &rArr; main &rArr; SendData &rArr; SendWireless &rArr; BSPWirelessWriteBytes &rArr; LT8920Send &rArr; Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[2c]">ADC_CMP_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2c]">ADC_CMP_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[2c]">ADC_CMP_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[1a]">BusFault_Handler</a> from gd32f1x0_it.o(i.BusFault_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[45]">CAN0_RX0_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[46]">CAN0_RX1_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[47]">CAN0_SCE_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[44]">CAN0_TX_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[4c]">CAN1_RX0_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[4d]">CAN1_RX1_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[4e]">CAN1_SCE_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[4b]">CAN1_TX_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[3c]">CEC_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[29]">DMA_Channel0_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[2a]">DMA_Channel1_2_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[2b]">DMA_Channel3_4_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[49]">DMA_Channel5_6_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[1d]">DebugMon_Handler</a> from gd32f1x0_it.o(i.DebugMon_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[25]">EXTI0_1_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[26]">EXTI2_3_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[27]">EXTI4_15_IRQHandler</a> from gd32f1x0_it.o(i.EXTI4_15_IRQHandler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[23]">FMC_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[18]">HardFault_Handler</a> from gd32f1x0_it.o(i.HardFault_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[3d]">I2C0_ER_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[36]">I2C0_EV_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[3e]">I2C1_ER_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[37]">I2C1_EV_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[40]">I2C2_ER_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[3f]">I2C2_EV_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[21]">LVD_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[19]">MemManage_Handler</a> from gd32f1x0_it.o(i.MemManage_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[17]">NMI_Handler</a> from gd32f1x0_it.o(i.NMI_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[1e]">PendSV_Handler</a> from gd32f1x0_it.o(i.PendSV_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[24]">RCU_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[22]">RTC_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[16]">Reset_Handler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[48]">SLCD_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[38]">SPI0_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[39]">SPI1_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[4a]">SPI2_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[1c]">SVC_Handler</a> from gd32f1x0_it.o(i.SVC_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[1f]">SysTick_Handler</a> from gd32f1x0_it.o(i.SysTick_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[4f]">SystemInit</a> from system_gd32f1x0.o(i.SystemInit) referenced from startup_gd32f1x0.o(.text)
+ <LI><a href="#[2d]">TIMER0_BRK_UP_TRG_COM_IRQHandler</a> from gd32f1x0_it.o(i.TIMER0_BRK_UP_TRG_COM_IRQHandler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[2e]">TIMER0_Channel_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[32]">TIMER13_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[33]">TIMER14_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[34]">TIMER15_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[35]">TIMER16_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[2f]">TIMER1_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[30]">TIMER2_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[31]">TIMER5_DAC_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[28]">TSI_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[3a]">USART0_IRQHandler</a> from bspscan.o(i.USART0_IRQHandler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[3b]">USART1_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[43]">USBDWakeUp_IRQHandler</a> from gd32f1x0_it.o(i.USBDWakeUp_IRQHandler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[42]">USBD_HP_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[41]">USBD_LP_IRQHandler</a> from gd32f1x0_it.o(i.USBD_LP_IRQHandler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[1b]">UsageFault_Handler</a> from gd32f1x0_it.o(i.UsageFault_Handler) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[20]">WWDGT_IRQHandler</a> from startup_gd32f1x0.o(.text) referenced from startup_gd32f1x0.o(RESET)
+ <LI><a href="#[51]">__main</a> from __main.o(!!!main) referenced from startup_gd32f1x0.o(.text)
+ <LI><a href="#[15]">hid_data_handler</a> from hid_core.o(i.hid_data_handler) referenced 2 times from bspusb.o(.data)
+ <LI><a href="#[13]">hid_deinit</a> from hid_core.o(i.hid_deinit) referenced 2 times from bspusb.o(.data)
+ <LI><a href="#[12]">hid_init</a> from hid_core.o(i.hid_init) referenced 2 times from bspusb.o(.data)
+ <LI><a href="#[14]">hid_req_handler</a> from hid_core.o(i.hid_req_handler) referenced 2 times from bspusb.o(.data)
+ <LI><a href="#[4]">usbd_clearfeature</a> from usbd_std.o(i.usbd_clearfeature) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[10]">usbd_configuration_descriptor_get</a> from usbd_std.o(i.usbd_configuration_descriptor_get) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[f]">usbd_device_descriptor_get</a> from usbd_std.o(i.usbd_device_descriptor_get) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[a]">usbd_getconfiguration</a> from usbd_std.o(i.usbd_getconfiguration) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[8]">usbd_getdescriptor</a> from usbd_std.o(i.usbd_getdescriptor) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[c]">usbd_getinterface</a> from usbd_std.o(i.usbd_getinterface) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[3]">usbd_getstatus</a> from usbd_std.o(i.usbd_getstatus) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[5]">usbd_reserved</a> from usbd_std.o(i.usbd_reserved) referenced 4 times from usbd_std.o(.data)
+ <LI><a href="#[7]">usbd_setaddress</a> from usbd_std.o(i.usbd_setaddress) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[b]">usbd_setconfiguration</a> from usbd_std.o(i.usbd_setconfiguration) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[9]">usbd_setdescriptor</a> from usbd_std.o(i.usbd_setdescriptor) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[6]">usbd_setfeature</a> from usbd_std.o(i.usbd_setfeature) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[d]">usbd_setinterface</a> from usbd_std.o(i.usbd_setinterface) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[11]">usbd_string_descriptor_get</a> from usbd_std.o(i.usbd_string_descriptor_get) referenced 2 times from usbd_std.o(.data)
+ <LI><a href="#[e]">usbd_synchframe</a> from usbd_std.o(i.usbd_synchframe) referenced 2 times from usbd_std.o(.data)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[51]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[52]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[54]"></a>__scatterload_rt2</STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[187]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[188]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[189]"></a>__decompress</STRONG> (Thumb, 90 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+
+<P><STRONG><a name="[18a]"></a>__decompress1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+
+<P><STRONG><a name="[18b]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[5a]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+</UL>
+
+<P><STRONG><a name="[18c]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+
+<P><STRONG><a name="[18d]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[18e]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+
+<P><STRONG><a name="[55]"></a>__rt_lib_init_rand_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_rand_2 &rArr; _rand_init &rArr; srand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rand_init
+</UL>
+
+<P><STRONG><a name="[18f]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+
+<P><STRONG><a name="[190]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[191]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[192]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[193]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[194]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+
+<P><STRONG><a name="[195]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+
+<P><STRONG><a name="[196]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[197]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+
+<P><STRONG><a name="[198]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[199]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[19a]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[19b]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[19c]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[19d]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+
+<P><STRONG><a name="[19e]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+
+<P><STRONG><a name="[19f]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[1a0]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+
+<P><STRONG><a name="[5f]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+</UL>
+
+<P><STRONG><a name="[1a1]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+
+<P><STRONG><a name="[1a2]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+
+<P><STRONG><a name="[1a3]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[1a4]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+
+<P><STRONG><a name="[1a5]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+
+<P><STRONG><a name="[1a6]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+
+<P><STRONG><a name="[1a7]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+
+<P><STRONG><a name="[53]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[1a8]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[57]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[59]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+</UL>
+
+<P><STRONG><a name="[1a9]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[5b]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; SendData &rArr; SendWireless &rArr; BSPWirelessWriteBytes &rArr; LT8920Send &rArr; Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[1aa]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[67]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[5e]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+</UL>
+
+<P><STRONG><a name="[1ab]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[60]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[b7]"></a>rand</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, rand.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelRand
+</UL>
+
+<P><STRONG><a name="[16]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>ADC_CMP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_CMP_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_CMP_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[45]"></a>CAN0_RX0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[46]"></a>CAN0_RX1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>CAN0_SCE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[44]"></a>CAN0_TX_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[4c]"></a>CAN1_RX0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[4d]"></a>CAN1_RX1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[4e]"></a>CAN1_SCE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[4b]"></a>CAN1_TX_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>CEC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>DMA_Channel0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>DMA_Channel1_2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>DMA_Channel3_4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[49]"></a>DMA_Channel5_6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>EXTI0_1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>EXTI2_3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>FMC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>I2C0_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>I2C0_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>I2C1_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>I2C1_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[40]"></a>I2C2_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[3f]"></a>I2C2_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>LVD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>RCU_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[48]"></a>SLCD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>SPI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[4a]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>TIMER0_Channel_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>TIMER13_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>TIMER14_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>TIMER15_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>TIMER16_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>TIMER1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>TIMER2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>TIMER5_DAC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>TSI_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>USART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>USBD_HP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>WWDGT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[66]"></a>__user_initial_stackheap</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, startup_gd32f1x0.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[62]"></a>srand</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, rand.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = srand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rand_init
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelRand
+</UL>
+
+<P><STRONG><a name="[56]"></a>_rand_init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rand.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _rand_init &rArr; srand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_rand_2
+</UL>
+
+<P><STRONG><a name="[f2]"></a>strlen</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, strlen.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCmd
+</UL>
+
+<P><STRONG><a name="[13b]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[63]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+
+<P><STRONG><a name="[1ac]"></a>_memcpy_lastbytes</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_v6.o(.text), UNUSED)
+
+<P><STRONG><a name="[fc]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SuffixSave
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveHideSet
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefixSave
+</UL>
+
+<P><STRONG><a name="[1ad]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[1ae]"></a>__rt_memclr_w</STRONG> (Thumb, 78 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[1af]"></a>_memset_w</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b0]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b1]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b2]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[64]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
+</UL>
+
+<P><STRONG><a name="[1b3]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b4]"></a>__rt_memcpy_w</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b5]"></a>_memcpy_lastbytes_aligned</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[58]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[5d]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[1b6]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[65]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[1b7]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b8]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b9]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1ba]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[61]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[68]"></a>BSPKeyInit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bspkey.o(BSPKeyInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = BSPKeyInit &rArr; gpio_mode_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6b]"></a>BSPPlayPowerOff</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, bspplay.o(BSPPlayPowerOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = BSPPlayPowerOff &rArr; BSPWirelessSaveConfig &rArr; LT8920SavePidSpid &rArr; SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessSaveConfig
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play_list_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPSystemFreeTimeingShutdown
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatLowPowerCheck
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[70]"></a>BSPScanInit</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, bspscan.o(BSPScanInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = BSPScanInit &rArr; uart_init &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[74]"></a>NVIC_Configuration</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, bspscan.o(NVIC_Configuration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = NVIC_Configuration &rArr; nvic_irq_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[76]"></a>SysTick_Configuration</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, systick.o(SysTick_Configuration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SysTick_Configuration &rArr; NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7a]"></a>codeID_character_set</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, bspscan.o(codeID_character_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = codeID_character_set &rArr; write_serial_command &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScannerFirstSet
+</UL>
+
+<P><STRONG><a name="[13c]"></a>get_suffix_len</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, bspscan.o(get_suffix_len))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = get_suffix_len
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7e]"></a>BSPBatCheckInit</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, bspbat.o(i.BSPBatCheckInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = BSPBatCheckInit &rArr; ADC0_GPIO_Configuration &rArr; gpio_mode_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_special_function_config
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_regular_channel_config
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_external_trigger_source_config
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_external_trigger_config
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_enable
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_data_alignment_config
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_channel_length_config
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_calibration_enable
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ad0_rcc_config
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BatteryStable
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_GPIO_Configuration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[89]"></a>BSPBatLowPowerCheck</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, bspbat.o(i.BSPBatLowPowerCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = BSPBatLowPowerCheck &rArr; BSPPlayPowerOff &rArr; BSPWirelessSaveConfig &rArr; LT8920SavePidSpid &rArr; SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOff
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBattery
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8d]"></a>BSPEepromRead</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, bspeeprom.o(i.BSPEepromRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWireWirelessMode
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSleepTime
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSingleContinual
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCountryKeyboard
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBeepOption
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScannerFirstSet
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSuffix
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSTXETX
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPrefix
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadHide
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEndMark
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConversion
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCodeNameDisp
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCodeIDCharacter
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCodeID
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBaudRate
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSrcDest
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSPid
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetPid
+</UL>
+
+<P><STRONG><a name="[6c]"></a>BSPEepromWrite</STRONG> (Thumb, 234 bytes, Stack size 48 bytes, bspeeprom.o(i.BSPEepromWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_unlock
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_page_erase
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_lock
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlashWriteNoCheck
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SuffixSave
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveWireWireless
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSleepTime
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSingleContinual
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSTXETX
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveHideSet
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveEndMark
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCountryKeyboard
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveConversion
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeNameDisp
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeID
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveBeepOption
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefixSave
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BaudSet
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOff
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSuccess
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveErr
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeIDCharacter
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigComplete
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920SaveSrcDest
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSPid
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SavePid
+</UL>
+
+<P><STRONG><a name="[91]"></a>BSPKeyScan</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, bspkey.o(i.BSPKeyScan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BSPKeyScan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScan
+</UL>
+
+<P><STRONG><a name="[93]"></a>BSPKeyScanInContinual</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, bspkey.o(i.BSPKeyScanInContinual))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BSPKeyScanInContinual
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sending_in_scanning
+</UL>
+
+<P><STRONG><a name="[94]"></a>BSPKeyWaitRelease</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, bspkey.o(i.BSPKeyWaitRelease))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = BSPKeyWaitRelease &rArr; BSPWirelessRoutine &rArr; LT8920DummySend &rArr; SendPkt &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessRoutine
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[96]"></a>BSPPlay</STRONG> (Thumb, 52 bytes, Stack size 4 bytes, bspplay.o(i.BSPPlay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = BSPPlay &rArr; read_play_list
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_play_list
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER0_BRK_UP_TRG_COM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[98]"></a>BSPPlayFail</STRONG> (Thumb, 34 bytes, Stack size 4 bytes, bspplay.o(i.BSPPlayFail))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = BSPPlayFail &rArr; play_list_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play_list_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWireless
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWire
+</UL>
+
+<P><STRONG><a name="[99]"></a>BSPPlayPowerOn</STRONG> (Thumb, 24 bytes, Stack size 4 bytes, bspplay.o(i.BSPPlayPowerOn))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = BSPPlayPowerOn &rArr; play_list_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play_list_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9a]"></a>BSPPlaySuccess</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, bspplay.o(i.BSPPlaySuccess))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = BSPPlaySuccess &rArr; play_list_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;play_list_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWireless
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWire
+</UL>
+
+<P><STRONG><a name="[9b]"></a>BSPScan</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bspscan.o(i.BSPScan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = BSPScan &rArr; scan_start &rArr; sending_in_scanning &rArr; BSPKeyScanInContinual
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyScan
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[139]"></a>BSPScanGetComplete</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, bspscan.o(i.BSPScanGetComplete))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[141]"></a>BSPScanSetComplete</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, bspscan.o(i.BSPScanSetComplete))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9d]"></a>BSPScannerFirstSet</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, bspscan.o(i.BSPScannerFirstSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = BSPScannerFirstSet &rArr; ConfigComplete &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigComplete
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;utf8_input_output
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noID_noSuffix_uartProtocal
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;codeID_character_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a1]"></a>BSPSystemFreeTimeingShutdown</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, bspsystem.o(i.BSPSystemFreeTimeingShutdown))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = BSPSystemFreeTimeingShutdown &rArr; BSPPlayPowerOff &rArr; BSPWirelessSaveConfig &rArr; LT8920SavePidSpid &rArr; SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a2]"></a>BSPSystemInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, bspsystem.o(i.BSPSystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BSPSystemInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[138]"></a>BSPWatchDogInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, bspwatchdog.o(i.BSPWatchDogInit))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bd]"></a>BSPWatchDogReset</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, bspwatchdog.o(i.BSPWatchDogReset))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sending_in_scanning
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWaitingDividedDataNew
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SearchChannel
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Connect
+</UL>
+
+<P><STRONG><a name="[a4]"></a>BSPWirelessConfig</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, bspwireless.o(i.BSPWirelessConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = BSPWirelessConfig &rArr; LT8920Config &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a6]"></a>BSPWirelessConnect</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, bspwireless.o(i.BSPWirelessConnect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = BSPWirelessConnect &rArr; LT8920CreateConnect &rArr; SearchChannel &rArr; WaitBroadcastAck &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920CreateConnect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a8]"></a>BSPWirelessFactoryReset</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, bspwireless.o(i.BSPWirelessFactoryReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = BSPWirelessFactoryReset &rArr; LT8920FactoryReset &rArr; SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920FactoryReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+</UL>
+
+<P><STRONG><a name="[aa]"></a>BSPWirelessInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, bspwireless.o(i.BSPWirelessInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = BSPWirelessInit &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[95]"></a>BSPWirelessRoutine</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, bspwireless.o(i.BSPWirelessRoutine))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = BSPWirelessRoutine &rArr; LT8920DummySend &rArr; SendPkt &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920DummySend
+</UL>
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyWaitRelease
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6d]"></a>BSPWirelessSaveConfig</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, bspwireless.o(i.BSPWirelessSaveConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = BSPWirelessSaveConfig &rArr; LT8920SavePidSpid &rArr; SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920SavePidSpid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOff
+</UL>
+
+<P><STRONG><a name="[ae]"></a>BSPWirelessSaveConnect</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, bspwireless.o(i.BSPWirelessSaveConnect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = BSPWirelessSaveConnect &rArr; LT8920SaveSrcDest &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920SaveSrcDest
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b0]"></a>BSPWirelessWriteBytes</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, bspwireless.o(i.BSPWirelessWriteBytes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = BSPWirelessWriteBytes &rArr; LT8920Send &rArr; Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWireless
+</UL>
+
+<P><STRONG><a name="[b2]"></a>BaudSet</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, config.o(i.BaudSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = BaudSet &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1a]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.BusFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[a0]"></a>ConfigComplete</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ConfigComplete))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = ConfigComplete &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScannerFirstSet
+</UL>
+
+<P><STRONG><a name="[1d]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.DebugMon_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>EXTI4_15_IRQHandler</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, gd32f1x0_it.o(i.EXTI4_15_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = EXTI4_15_IRQHandler &rArr; usbd_remote_wakeup_active &rArr; resume_mcu &rArr; lowpower_mode_exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_remote_wakeup_active
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exti_interrupt_flag_get
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exti_interrupt_flag_clear
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[c6]"></a>FactorySet</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, config.o(i.FactorySet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = FactorySet &rArr; SaveHideSet &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SuffixSave
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveWireWireless
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSleepTime
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSingleContinual
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSTXETX
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveHideSet
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveEndMark
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCountryKeyboard
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveConversion
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeNameDisp
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeID
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveBeepOption
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefixSave
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BaudSet
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessFactoryReset
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SuffixInit
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSuccess
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveErr
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeIDCharacter
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefixInit
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HideInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[dc]"></a>GetPrefixLen</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, config.o(i.GetPrefixLen))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GetPrefixLen
+</UL>
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPrefixToTx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefixInit
+</UL>
+
+<P><STRONG><a name="[18]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.HardFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[d6]"></a>HideInit</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, config.o(i.HideInit))
+<BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+</UL>
+
+<P><STRONG><a name="[e0]"></a>KMP</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, data_format.o(i.KMP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = KMP &rArr; cal_next
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cal_next
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_hide
+</UL>
+
+<P><STRONG><a name="[a5]"></a>LT8920Config</STRONG> (Thumb, 360 bytes, Stack size 8 bytes, lt8920.o(i.LT8920Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = LT8920Config &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Reset
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiLt8920Write
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSrcDest
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPidSPid
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DummyInit
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelRand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessConfig
+</UL>
+
+<P><STRONG><a name="[a7]"></a>LT8920CreateConnect</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, lt8920.o(i.LT8920CreateConnect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = LT8920CreateConnect &rArr; SearchChannel &rArr; WaitBroadcastAck &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SearchChannel
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DummyInit
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Connect
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelRand
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BroadcastInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessConnect
+</UL>
+
+<P><STRONG><a name="[ac]"></a>LT8920DummySend</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lt8920.o(i.LT8920DummySend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = LT8920DummySend &rArr; SendPkt &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessRoutine
+</UL>
+
+<P><STRONG><a name="[a9]"></a>LT8920FactoryReset</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, lt8920.o(i.LT8920FactoryReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = LT8920FactoryReset &rArr; SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSPid
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SavePid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessFactoryReset
+</UL>
+
+<P><STRONG><a name="[129]"></a>LT8920IncreaseRandom</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, lt8920.o(i.LT8920IncreaseRandom))
+<BR><BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER0_BRK_UP_TRG_COM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[ab]"></a>LT8920Init</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, lt8920.o(i.LT8920Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessInit
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+</UL>
+
+<P><STRONG><a name="[e2]"></a>LT8920Reset</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lt8920.o(i.LT8920Reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LT8920Reset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+</UL>
+
+<P><STRONG><a name="[ad]"></a>LT8920SavePidSpid</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, lt8920.o(i.LT8920SavePidSpid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = LT8920SavePidSpid &rArr; SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSPid
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SavePid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessSaveConfig
+</UL>
+
+<P><STRONG><a name="[af]"></a>LT8920SaveSrcDest</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, lt8920.o(i.LT8920SaveSrcDest))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = LT8920SaveSrcDest &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessSaveConnect
+</UL>
+
+<P><STRONG><a name="[b1]"></a>LT8920Send</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, lt8920.o(i.LT8920Send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = LT8920Send &rArr; Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DatasDivide
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessWriteBytes
+</UL>
+
+<P><STRONG><a name="[19]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.MemManage_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.NMI_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[f3]"></a>Parsing</STRONG> (Thumb, 2650 bytes, Stack size 8 bytes, dataparse.o(i.Parsing))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Parsing &rArr; ParseCmd &rArr; strlen
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;parsing_string_MDYCHAR
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParsingTailLenMdy
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParsingSuffixMdychar
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParsingPrefixMdychar
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParsingHeadLenMdy
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1e]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.PendSV_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[f9]"></a>PlayListInit</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, bspplay.o(i.PlayListInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = PlayListInit &rArr; time1_init_pwm &rArr; beep_init &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[13a]"></a>PrefixAssignment</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, config.o(i.PrefixAssignment))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d2]"></a>PrefixInit</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, config.o(i.PrefixInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = PrefixInit &rArr; GetPrefixLen
+</UL>
+<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetPrefixLen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+</UL>
+
+<P><STRONG><a name="[d3]"></a>PrefixSave</STRONG> (Thumb, 172 bytes, Stack size 48 bytes, config.o(i.PrefixSave))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = PrefixSave &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7c]"></a>QR_flash_save</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, bspscan.o(i.QR_flash_save))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = QR_flash_save &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_check2
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc_cal_by_bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_write_baud
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_moduler_val_assignment
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_moduler_set
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;utf8_input_output
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noID_noSuffix_uartProtocal
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;codeID_character_set
+</UL>
+
+<P><STRONG><a name="[101]"></a>QR_moduler_set</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, bspscan.o(i.QR_moduler_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = QR_moduler_set &rArr; read_serial_command &rArr; serial_check &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[103]"></a>QR_moduler_val_assignment</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, bspscan.o(i.QR_moduler_val_assignment))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = QR_moduler_val_assignment &rArr; write_serial_command &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[107]"></a>ReadBaudRate</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, config.o(i.ReadBaudRate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadBaudRate &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[108]"></a>ReadBeepOption</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadBeepOption))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadBeepOption &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[109]"></a>ReadCodeID</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadCodeID))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadCodeID &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[10a]"></a>ReadCodeIDCharacter</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, config.o(i.ReadCodeIDCharacter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadCodeIDCharacter &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[10b]"></a>ReadCodeNameDisp</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadCodeNameDisp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadCodeNameDisp &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[10c]"></a>ReadConfig</STRONG> (Thumb, 158 bytes, Stack size 8 bytes, config.o(i.ReadConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = ReadConfig &rArr; ReadSuffix &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWireWirelessMode
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSleepTime
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSingleContinual
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCountryKeyboard
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBeepOption
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteStx
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WritePrefix
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSuffix
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSTXETX
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPrefix
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadHide
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEndMark
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConversion
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCodeNameDisp
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCodeIDCharacter
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCodeID
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBaudRate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[114]"></a>ReadConversion</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadConversion))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadConversion &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[10f]"></a>ReadCountryKeyboard</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadCountryKeyboard))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadCountryKeyboard &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[116]"></a>ReadEndMark</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadEndMark))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadEndMark &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[113]"></a>ReadHide</STRONG> (Thumb, 70 bytes, Stack size 32 bytes, config.o(i.ReadHide))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = ReadHide &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[111]"></a>ReadPrefix</STRONG> (Thumb, 70 bytes, Stack size 32 bytes, config.o(i.ReadPrefix))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = ReadPrefix &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[115]"></a>ReadSTXETX</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadSTXETX))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadSTXETX &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[10e]"></a>ReadSingleContinual</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadSingleContinual))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadSingleContinual &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[110]"></a>ReadSleepTime</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, config.o(i.ReadSleepTime))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadSleepTime &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[112]"></a>ReadSuffix</STRONG> (Thumb, 70 bytes, Stack size 32 bytes, config.o(i.ReadSuffix))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = ReadSuffix &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[10d]"></a>ReadWireWirelessMode</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, config.o(i.ReadWireWirelessMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadWireWirelessMode &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1c]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.SVC_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[cc]"></a>SaveBeepOption</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveBeepOption))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveBeepOption &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d1]"></a>SaveCodeID</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveCodeID))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveCodeID &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d0]"></a>SaveCodeIDCharacter</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, config.o(i.SaveCodeIDCharacter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SaveCodeIDCharacter &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+</UL>
+
+<P><STRONG><a name="[cf]"></a>SaveCodeNameDisp</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveCodeNameDisp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveCodeNameDisp &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d8]"></a>SaveConversion</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, config.o(i.SaveConversion))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SaveConversion &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[cb]"></a>SaveCountryKeyboard</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveCountryKeyboard))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveCountryKeyboard &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d9]"></a>SaveEndMark</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveEndMark))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveEndMark &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c9]"></a>SaveErr</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, config.o(i.SaveErr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SaveErr &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+</UL>
+
+<P><STRONG><a name="[d7]"></a>SaveHideSet</STRONG> (Thumb, 178 bytes, Stack size 56 bytes, config.o(i.SaveHideSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = SaveHideSet &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ce]"></a>SaveSTXETX</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveSTXETX))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveSTXETX &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ca]"></a>SaveSingleContinual</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveSingleContinual))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveSingleContinual &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[cd]"></a>SaveSleepTime</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveSleepTime))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveSleepTime &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c8]"></a>SaveSuccess</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, config.o(i.SaveSuccess))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SaveSuccess &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+</UL>
+
+<P><STRONG><a name="[c7]"></a>SaveWireWireless</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, config.o(i.SaveWireWireless))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SaveWireWireless &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[11f]"></a>SendData</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, config.o(i.SendData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = SendData &rArr; SendWireless &rArr; BSPWirelessWriteBytes &rArr; LT8920Send &rArr; Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWireless
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWire
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[13e]"></a>StringAssignment</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, config.o(i.StringAssignment))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[13d]"></a>SuffixAssignment</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, config.o(i.SuffixAssignment))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d4]"></a>SuffixInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, config.o(i.SuffixInit))
+<BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+</UL>
+
+<P><STRONG><a name="[d5]"></a>SuffixSave</STRONG> (Thumb, 172 bytes, Stack size 48 bytes, config.o(i.SuffixSave))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = SuffixSave &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1f]"></a>SysTick_Handler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, gd32f1x0_it.o(i.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysTick_Handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_decrement
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[4f]"></a>SystemInit</STRONG> (Thumb, 118 bytes, Stack size 8 bytes, system_gd32f1x0.o(i.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SystemInit &rArr; system_clock_config
+</UL>
+<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(.text)
+</UL>
+<P><STRONG><a name="[2d]"></a>TIMER0_BRK_UP_TRG_COM_IRQHandler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, gd32f1x0_it.o(i.TIMER0_BRK_UP_TRG_COM_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIMER0_BRK_UP_TRG_COM_IRQHandler &rArr; BSPPlay &rArr; read_play_list
+</UL>
+<BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920IncreaseRandom
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>USART0_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, bspscan.o(i.USART0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USART0_IRQHandler &rArr; get_QR_module_data &rArr; write_CODE_TYPE_ID &rArr; _assignment
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[43]"></a>USBDWakeUp_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, gd32f1x0_it.o(i.USBDWakeUp_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USBDWakeUp_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exti_interrupt_flag_clear
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[41]"></a>USBD_LP_IRQHandler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, gd32f1x0_it.o(i.USBD_LP_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = USBD_LP_IRQHandler &rArr; usbd_isr &rArr; usbd_intf_lpst &rArr; usbd_setup_transaction &rArr; usbd_device_class_request &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.UsageFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
+</UL>
+<P><STRONG><a name="[118]"></a>WritePrefix</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, config.o(i.WritePrefix))
+<BR><BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[117]"></a>WriteStx</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, config.o(i.WriteStx))
+<BR><BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+</UL>
+
+<P><STRONG><a name="[87]"></a>adc_calibration_enable</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_calibration_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[80]"></a>adc_channel_length_config</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_channel_length_config))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[84]"></a>adc_data_alignment_config</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_data_alignment_config))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[85]"></a>adc_enable</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[83]"></a>adc_external_trigger_config</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_external_trigger_config))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[82]"></a>adc_external_trigger_source_config</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_external_trigger_source_config))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[105]"></a>adc_flag_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_flag_get))
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBattery
+</UL>
+
+<P><STRONG><a name="[86]"></a>adc_regular_channel_config</STRONG> (Thumb, 214 bytes, Stack size 16 bytes, gd32f1x0_adc.o(i.adc_regular_channel_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = adc_regular_channel_config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[106]"></a>adc_regular_data_read</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_regular_data_read))
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBattery
+</UL>
+
+<P><STRONG><a name="[104]"></a>adc_software_trigger_enable</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_software_trigger_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBattery
+</UL>
+
+<P><STRONG><a name="[81]"></a>adc_special_function_config</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, gd32f1x0_adc.o(i.adc_special_function_config))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[140]"></a>character_conversion</STRONG> (Thumb, 246 bytes, Stack size 0 bytes, data_format.o(i.character_conversion))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[fd]"></a>crc_cal_by_bit</STRONG> (Thumb, 68 bytes, Stack size 12 bytes, bspscan.o(i.crc_cal_by_bit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = crc_cal_by_bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_check
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+
+<P><STRONG><a name="[12e]"></a>data_hide</STRONG> (Thumb, 226 bytes, Stack size 16 bytes, data_format.o(i.data_hide))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = data_hide &rArr; KMP &rArr; cal_next
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KMP
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6f]"></a>delay_1ms</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, systick.o(i.delay_1ms))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOff
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sending_in_scanning
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyScanInContinual
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyScan
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;keybroad_value
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Reset
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitingSuccess
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitConnectAck
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitBroadcastAck
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+
+<P><STRONG><a name="[f0]"></a>delay_1us</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, systick.o(i.delay_1us))
+<BR><BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiLt8920Write
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPkt
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModeReceive
+</UL>
+
+<P><STRONG><a name="[126]"></a>delay_decrement</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, systick.o(i.delay_decrement))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[166]"></a>exti_init</STRONG> (Thumb, 178 bytes, Stack size 8 bytes, gd32f1x0_exti.o(i.exti_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = exti_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_gpio_config
+</UL>
+
+<P><STRONG><a name="[c5]"></a>exti_interrupt_flag_clear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32f1x0_exti.o(i.exti_interrupt_flag_clear))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBDWakeUp_IRQHandler
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_15_IRQHandler
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_gpio_config
+</UL>
+
+<P><STRONG><a name="[c3]"></a>exti_interrupt_flag_get</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gd32f1x0_exti.o(i.exti_interrupt_flag_get))
+<BR><BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_15_IRQHandler
+</UL>
+
+<P><STRONG><a name="[90]"></a>fmc_lock</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f1x0_fmc.o(i.fmc_lock))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+
+<P><STRONG><a name="[8e]"></a>fmc_page_erase</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, gd32f1x0_fmc.o(i.fmc_page_erase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fmc_page_erase &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_ready_wait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+
+<P><STRONG><a name="[12f]"></a>fmc_ready_wait</STRONG> (Thumb, 34 bytes, Stack size 4 bytes, gd32f1x0_fmc.o(i.fmc_ready_wait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_state_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_word_program
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_page_erase
+</UL>
+
+<P><STRONG><a name="[130]"></a>fmc_state_get</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, gd32f1x0_fmc.o(i.fmc_state_get))
+<BR><BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_ready_wait
+</UL>
+
+<P><STRONG><a name="[8c]"></a>fmc_unlock</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, gd32f1x0_fmc.o(i.fmc_unlock))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+
+<P><STRONG><a name="[da]"></a>fmc_word_program</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, gd32f1x0_fmc.o(i.fmc_word_program))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_ready_wait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlashWriteNoCheck
+</UL>
+
+<P><STRONG><a name="[12b]"></a>get_QR_module_data</STRONG> (Thumb, 364 bytes, Stack size 8 bytes, bspscan.o(i.get_QR_module_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = get_QR_module_data &rArr; write_CODE_TYPE_ID &rArr; _assignment
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_03_resend
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_suffix_to_tx
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_etx
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_end_mark
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_CODE_TYPE_ID
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
+</UL>
+
+<P><STRONG><a name="[79]"></a>gpio_af_set</STRONG> (Thumb, 94 bytes, Stack size 20 bytes, gd32f1x0_gpio.o(i.gpio_af_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_af_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;beep_init
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[8b]"></a>gpio_bit_reset</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_gpio.o(i.gpio_bit_reset))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPSystemFreeTimeingShutdown
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatLowPowerCheck
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sending_in_scanning
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Reset
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiLt8920Write
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_LT8920_Read
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPkt
+</UL>
+
+<P><STRONG><a name="[72]"></a>gpio_bit_set</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_gpio.o(i.gpio_bit_set))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanInit
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sending_in_scanning
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_connect
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Reset
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiLt8920Write
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_LT8920_Read
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPkt
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+
+<P><STRONG><a name="[92]"></a>gpio_input_bit_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f1x0_gpio.o(i.gpio_input_bit_get))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyWaitRelease
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWire
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sending_in_scanning
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyScanInContinual
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyScan
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReceivedData
+</UL>
+
+<P><STRONG><a name="[6a]"></a>gpio_mode_set</STRONG> (Thumb, 78 bytes, Stack size 20 bytes, gd32f1x0_gpio.o(i.gpio_mode_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_mode_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanInit
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyInit
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_gpio_config
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_GPIO_Configuration
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;beep_init
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[71]"></a>gpio_output_options_set</STRONG> (Thumb, 66 bytes, Stack size 20 bytes, gd32f1x0_gpio.o(i.gpio_output_options_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_output_options_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanInit
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_gpio_config
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;beep_init
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[5c]"></a>main</STRONG> (Thumb, 4150 bytes, Stack size 24 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = main &rArr; SendData &rArr; SendWireless &rArr; BSPWirelessWriteBytes &rArr; LT8920Send &rArr; Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_write_baud
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_suffix_len
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_hide
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;character_conversion
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Configuration
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SuffixSave
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SuffixAssignment
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StringAssignment
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendData
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveWireWireless
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSleepTime
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSingleContinual
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveSTXETX
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveHideSet
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveEndMark
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCountryKeyboard
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveConversion
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeNameDisp
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveCodeID
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveBeepOption
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWireWirelessMode
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSleepTime
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSingleContinual
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCountryKeyboard
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadConfig
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBeepOption
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_moduler_val_assignment
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_moduler_set
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefixSave
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrefixAssignment
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayListInit
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Parsing
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetPrefixLen
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FactorySet
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BaudSet
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessSaveConnect
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessRoutine
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessInit
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessConnect
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessConfig
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWatchDogReset
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWatchDogInit
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPUsbInit
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPSystemInit
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPSystemFreeTimeingShutdown
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScannerFirstSet
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanSetComplete
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanInit
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanGetComplete
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScan
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlaySuccess
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOn
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOff
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayFail
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyWaitRelease
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyInit
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatLowPowerCheck
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[75]"></a>nvic_irq_enable</STRONG> (Thumb, 156 bytes, Stack size 20 bytes, gd32f1x0_misc.o(i.nvic_irq_enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = nvic_irq_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_int_config
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Configuration
+</UL>
+
+<P><STRONG><a name="[a3]"></a>nvic_priority_group_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_misc.o(i.nvic_priority_group_set))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPSystemInit
+</UL>
+
+<P><STRONG><a name="[6e]"></a>play_list_write</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, bspplay.o(i.play_list_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = play_list_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlaySuccess
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOn
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayPowerOff
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayFail
+</UL>
+
+<P><STRONG><a name="[186]"></a>pmu_to_deepsleepmode</STRONG> (Thumb, 170 bytes, Stack size 0 bytes, gd32f1x0_pmu.o(i.pmu_to_deepsleepmode))
+<BR><BR>[Called By]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_suspend
+</UL>
+
+<P><STRONG><a name="[12d]"></a>rcu_adc_clock_config</STRONG> (Thumb, 148 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_adc_clock_config))
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ad0_rcc_config
+</UL>
+
+<P><STRONG><a name="[149]"></a>rcu_clock_freq_get</STRONG> (Thumb, 646 bytes, Stack size 96 bytes, gd32f1x0_rcu.o(i.rcu_clock_freq_get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = rcu_clock_freq_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+</UL>
+
+<P><STRONG><a name="[16e]"></a>rcu_flag_get</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_flag_get))
+<BR><BR>[Called By]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lowpower_mode_exit
+</UL>
+
+<P><STRONG><a name="[16d]"></a>rcu_osci_on</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_osci_on))
+<BR><BR>[Called By]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lowpower_mode_exit
+</UL>
+
+<P><STRONG><a name="[69]"></a>rcu_periph_clock_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_periph_clock_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanInit
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyInit
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_rcu_config
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ad0_rcc_config
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;beep_init
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[147]"></a>rcu_periph_reset_disable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_periph_reset_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+</UL>
+
+<P><STRONG><a name="[146]"></a>rcu_periph_reset_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_periph_reset_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+</UL>
+
+<P><STRONG><a name="[16f]"></a>rcu_system_clock_source_config</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_system_clock_source_config))
+<BR><BR>[Called By]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lowpower_mode_exit
+</UL>
+
+<P><STRONG><a name="[170]"></a>rcu_system_clock_source_get</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_system_clock_source_get))
+<BR><BR>[Called By]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lowpower_mode_exit
+</UL>
+
+<P><STRONG><a name="[167]"></a>rcu_usbd_clock_config</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, gd32f1x0_rcu.o(i.rcu_usbd_clock_config))
+<BR><BR>[Called By]<UL><LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_rcu_config
+</UL>
+
+<P><STRONG><a name="[97]"></a>read_play_list</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, bspplay.o(i.read_play_list))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = read_play_list
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlay
+</UL>
+
+<P><STRONG><a name="[102]"></a>read_serial_command</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, bspscan.o(i.read_serial_command))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = read_serial_command &rArr; serial_check &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_check
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc_cal_by_bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_moduler_set
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;utf8_input_output
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noID_noSuffix_uartProtocal
+</UL>
+
+<P><STRONG><a name="[9c]"></a>scan_start</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, bspscan.o(i.scan_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = scan_start &rArr; sending_in_scanning &rArr; BSPKeyScanInContinual
+</UL>
+<BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sending_in_scanning
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScan
+</UL>
+
+<P><STRONG><a name="[142]"></a>serial_check</STRONG> (Thumb, 82 bytes, Stack size 20 bytes, bspscan.o(i.serial_check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = serial_check &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc_cal_by_bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+</UL>
+
+<P><STRONG><a name="[100]"></a>serial_check2</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, bspscan.o(i.serial_check2))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+
+<P><STRONG><a name="[ec]"></a>spi_disable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_spi.o(i.spi_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+</UL>
+
+<P><STRONG><a name="[ee]"></a>spi_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_spi.o(i.spi_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+</UL>
+
+<P><STRONG><a name="[125]"></a>spi_i2s_data_receive</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f1x0_spi.o(i.spi_i2s_data_receive))
+<BR><BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+</UL>
+
+<P><STRONG><a name="[124]"></a>spi_i2s_data_transmit</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_spi.o(i.spi_i2s_data_transmit))
+<BR><BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+</UL>
+
+<P><STRONG><a name="[123]"></a>spi_i2s_flag_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f1x0_spi.o(i.spi_i2s_flag_get))
+<BR><BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+</UL>
+
+<P><STRONG><a name="[ed]"></a>spi_init</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gd32f1x0_spi.o(i.spi_init))
+<BR><BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lt8920SpiInit
+</UL>
+
+<P><STRONG><a name="[171]"></a>system_lowpower_reset</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, gd32f1x0_misc.o(i.system_lowpower_reset))
+<BR><BR>[Called By]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lowpower_mode_exit
+</UL>
+
+<P><STRONG><a name="[14e]"></a>timer_auto_reload_shadow_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_timer.o(i.timer_auto_reload_shadow_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+</UL>
+
+<P><STRONG><a name="[151]"></a>timer_channel_output_config</STRONG> (Thumb, 444 bytes, Stack size 8 bytes, gd32f1x0_timer.o(i.timer_channel_output_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_channel_output_config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+</UL>
+
+<P><STRONG><a name="[152]"></a>timer_channel_output_mode_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f1x0_timer.o(i.timer_channel_output_mode_config))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+</UL>
+
+<P><STRONG><a name="[153]"></a>timer_channel_output_shadow_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f1x0_timer.o(i.timer_channel_output_shadow_config))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+</UL>
+
+<P><STRONG><a name="[145]"></a>timer_deinit</STRONG> (Thumb, 210 bytes, Stack size 8 bytes, gd32f1x0_timer.o(i.timer_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_deinit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+</UL>
+
+<P><STRONG><a name="[150]"></a>timer_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_timer.o(i.timer_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+</UL>
+
+<P><STRONG><a name="[14d]"></a>timer_init</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, gd32f1x0_timer.o(i.timer_init))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+</UL>
+
+<P><STRONG><a name="[14f]"></a>timer_interrupt_enable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f1x0_timer.o(i.timer_interrupt_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time0_init
+</UL>
+
+<P><STRONG><a name="[12a]"></a>timer_interrupt_flag_clear</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f1x0_timer.o(i.timer_interrupt_flag_clear))
+<BR><BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER0_BRK_UP_TRG_COM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[128]"></a>timer_interrupt_flag_get</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gd32f1x0_timer.o(i.timer_interrupt_flag_get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_interrupt_flag_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER0_BRK_UP_TRG_COM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[148]"></a>usart_baudrate_set</STRONG> (Thumb, 120 bytes, Stack size 32 bytes, gd32f1x0_usart.o(i.usart_baudrate_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = usart_baudrate_set &rArr; rcu_clock_freq_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_clock_freq_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[131]"></a>usart_data_receive</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_data_receive))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+
+<P><STRONG><a name="[fe]"></a>usart_data_transmit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_data_transmit))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+
+<P><STRONG><a name="[14a]"></a>usart_deinit</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, gd32f1x0_usart.o(i.usart_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_deinit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[15d]"></a>usart_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[ff]"></a>usart_flag_get</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32f1x0_usart.o(i.usart_flag_get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_flag_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+
+<P><STRONG><a name="[158]"></a>usart_hardware_flow_cts_config</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_hardware_flow_cts_config))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[157]"></a>usart_hardware_flow_rts_config</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_hardware_flow_rts_config))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[15c]"></a>usart_interrupt_enable</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f1x0_usart.o(i.usart_interrupt_enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_interrupt_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[15b]"></a>usart_overrun_disable</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_overrun_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[156]"></a>usart_parity_config</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_parity_config))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[159]"></a>usart_receive_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_receive_config))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[155]"></a>usart_stop_bit_set</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_stop_bit_set))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[15a]"></a>usart_transmit_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_transmit_config))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[154]"></a>usart_word_length_set</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f1x0_usart.o(i.usart_word_length_set))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+</UL>
+
+<P><STRONG><a name="[13f]"></a>usart_write_baud</STRONG> (Thumb, 158 bytes, Stack size 16 bytes, bspscan.o(i.usart_write_baud))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = usart_write_baud &rArr; uart_init &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[135]"></a>write_CODE_TYPE_ID</STRONG> (Thumb, 174 bytes, Stack size 8 bytes, bspscan.o(i.write_CODE_TYPE_ID))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = write_CODE_TYPE_ID &rArr; _assignment
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zero_assignment
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_assignment
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+
+<P><STRONG><a name="[136]"></a>write_end_mark</STRONG> (Thumb, 162 bytes, Stack size 0 bytes, bspscan.o(i.write_end_mark))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+
+<P><STRONG><a name="[7b]"></a>write_serial_command</STRONG> (Thumb, 192 bytes, Stack size 40 bytes, bspscan.o(i.write_serial_command))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = write_serial_command &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_check2
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc_cal_by_bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_write_baud
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_moduler_val_assignment
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_moduler_set
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;utf8_input_output
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noID_noSuffix_uartProtocal
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;codeID_character_set
+</UL>
+
+<P><STRONG><a name="[9e]"></a>noID_noSuffix_uartProtocal</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, bspscan.o(noID_noSuffix_uartProtocal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = noID_noSuffix_uartProtocal &rArr; read_serial_command &rArr; serial_check &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScannerFirstSet
+</UL>
+
+<P><STRONG><a name="[fb]"></a>time0_init</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, bspplay.o(time0_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = time0_init &rArr; nvic_irq_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_enable
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_auto_reload_shadow_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayListInit
+</UL>
+
+<P><STRONG><a name="[fa]"></a>time1_init_pwm</STRONG> (Thumb, 120 bytes, Stack size 32 bytes, bspplay.o(time1_init_pwm))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = time1_init_pwm &rArr; beep_init &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_shadow_config
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_mode_config
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_config
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_auto_reload_shadow_enable
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;beep_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayListInit
+</UL>
+
+<P><STRONG><a name="[73]"></a>uart_init</STRONG> (Thumb, 208 bytes, Stack size 8 bytes, bspscan.o(uart_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = uart_init &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_af_set
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_word_length_set
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_stop_bit_set
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_parity_config
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_overrun_disable
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_enable
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_hardware_flow_rts_config
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_hardware_flow_cts_config
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Configuration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_write_baud
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScanInit
+</UL>
+
+<P><STRONG><a name="[9f]"></a>utf8_input_output</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, bspscan.o(utf8_input_output))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = utf8_input_output &rArr; read_serial_command &rArr; serial_check &rArr; crc_cal_by_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_serial_command
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_serial_command
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QR_flash_save
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPScannerFirstSet
+</UL>
+
+<P><STRONG><a name="[134]"></a>write_etx</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, bspscan.o(write_etx))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+
+<P><STRONG><a name="[137]"></a>BSPUsbInit</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, bspusb.o(i.BSPUsbInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = BSPUsbInit &rArr; USB_int_config &rArr; nvic_irq_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usbd_core_init
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_rcu_config
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_int_config
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_gpio_config
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_connect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[121]"></a>SendWire</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, bspusb.o(i.SendWire))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SendWire &rArr; BSPPutArray &rArr; keybroad_value &rArr; hid_report_send &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlaySuccess
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayFail
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPutArray
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendData
+</UL>
+
+<P><STRONG><a name="[15]"></a>hid_data_handler</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, hid_core.o(i.hid_data_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = hid_data_handler &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bspusb.o(.data)
+</UL>
+<P><STRONG><a name="[13]"></a>hid_deinit</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, hid_core.o(i.hid_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = hid_deinit &rArr; usbd_ep_deinit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_deinit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bspusb.o(.data)
+</UL>
+<P><STRONG><a name="[12]"></a>hid_init</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, hid_core.o(i.hid_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = hid_init &rArr; usbd_ep_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bspusb.o(.data)
+</UL>
+<P><STRONG><a name="[160]"></a>hid_report_send</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, hid_core.o(i.hid_report_send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = hid_report_send &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;keybroad_value
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPutArray
+</UL>
+
+<P><STRONG><a name="[14]"></a>hid_req_handler</STRONG> (Thumb, 232 bytes, Stack size 24 bytes, hid_core.o(i.hid_req_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = hid_req_handler &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bspusb.o(.data)
+</UL>
+<P><STRONG><a name="[172]"></a>resume_mcu</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, usbd_pwr.o(i.resume_mcu))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = resume_mcu &rArr; lowpower_mode_exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lowpower_mode_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_remote_wakeup_active
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_wakeup
+</UL>
+
+<P><STRONG><a name="[174]"></a>usbd_device_class_request</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_device_class_request))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = usbd_device_class_request &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setup_transaction
+</UL>
+
+<P><STRONG><a name="[16b]"></a>usbd_enum_error</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_enum_error))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_stall
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_req_handler
+<LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_device_class_request
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setinterface
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setfeature
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setconfiguration
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setaddress
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_getstatus
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_getinterface
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_getdescriptor
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_getconfiguration
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_clearfeature
+</UL>
+
+<P><STRONG><a name="[173]"></a>usbd_ep_clear_stall</STRONG> (Thumb, 212 bytes, Stack size 20 bytes, usbd_core.o(i.usbd_ep_clear_stall))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = usbd_ep_clear_stall
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_clearfeature
+</UL>
+
+<P><STRONG><a name="[17a]"></a>usbd_ep_data_read</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, usbd_core.o(i.usbd_ep_data_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usbd_ep_data_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_lpst
+</UL>
+
+<P><STRONG><a name="[176]"></a>usbd_ep_data_write</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, usbd_core.o(i.usbd_ep_data_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = usbd_ep_data_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+</UL>
+
+<P><STRONG><a name="[169]"></a>usbd_ep_deinit</STRONG> (Thumb, 174 bytes, Stack size 12 bytes, usbd_core.o(i.usbd_ep_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = usbd_ep_deinit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_deinit
+</UL>
+
+<P><STRONG><a name="[16a]"></a>usbd_ep_init</STRONG> (Thumb, 742 bytes, Stack size 28 bytes, usbd_core.o(i.usbd_ep_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = usbd_ep_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_init
+</UL>
+
+<P><STRONG><a name="[178]"></a>usbd_ep_rx</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, usbd_core.o(i.usbd_ep_rx))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = usbd_ep_rx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_out_transaction
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_in_transaction
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_lpst
+</UL>
+
+<P><STRONG><a name="[175]"></a>usbd_ep_stall</STRONG> (Thumb, 156 bytes, Stack size 20 bytes, usbd_core.o(i.usbd_ep_stall))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = usbd_ep_stall
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setfeature
+<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setup_transaction
+</UL>
+
+<P><STRONG><a name="[168]"></a>usbd_ep_tx</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, usbd_core.o(i.usbd_ep_tx))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_data_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_req_handler
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_report_send
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_data_handler
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_getstatus
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_getdescriptor
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_getconfiguration
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_in_transaction
+</UL>
+
+<P><STRONG><a name="[177]"></a>usbd_in_transaction</STRONG> (Thumb, 270 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_in_transaction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = usbd_in_transaction &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_rx
+<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_lpst
+</UL>
+
+<P><STRONG><a name="[12c]"></a>usbd_isr</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, usbd_int.o(i.usbd_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = usbd_isr &rArr; usbd_intf_lpst &rArr; usbd_setup_transaction &rArr; usbd_device_class_request &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_wakeup
+<LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_suspend
+<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_sof
+<LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_reset
+<LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_lpst
+<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_esof
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LP_IRQHandler
+</UL>
+
+<P><STRONG><a name="[17c]"></a>usbd_out_transaction</STRONG> (Thumb, 154 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_out_transaction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = usbd_out_transaction &rArr; usbd_ep_rx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_rx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_lpst
+</UL>
+
+<P><STRONG><a name="[c4]"></a>usbd_remote_wakeup_active</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, usbd_pwr.o(i.usbd_remote_wakeup_active))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = usbd_remote_wakeup_active &rArr; resume_mcu &rArr; lowpower_mode_exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;resume_mcu
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_15_IRQHandler
+</UL>
+
+<P><STRONG><a name="[183]"></a>usbd_setup_request_parse</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, usbd_std.o(i.usbd_setup_request_parse))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usbd_setup_request_parse
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setup_transaction
+</UL>
+
+<P><STRONG><a name="[17b]"></a>usbd_setup_transaction</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_setup_transaction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = usbd_setup_transaction &rArr; usbd_device_class_request &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_stall
+<LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_vendor_request
+<LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_standard_request
+<LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setup_request_parse
+<LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_device_class_request
+</UL>
+<BR>[Called By]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_lpst
+</UL>
+
+<P><STRONG><a name="[184]"></a>usbd_standard_request</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_standard_request))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usbd_standard_request
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setup_transaction
+</UL>
+
+<P><STRONG><a name="[17e]"></a>usbd_suspend</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, usbd_pwr.o(i.usbd_suspend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usbd_suspend
+</UL>
+<BR>[Calls]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmu_to_deepsleepmode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_intf_suspend
+</UL>
+
+<P><STRONG><a name="[185]"></a>usbd_vendor_request</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usbd_std.o(i.usbd_vendor_request))
+<BR><BR>[Called By]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setup_transaction
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[77]"></a>NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, systick.o(i.NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Configuration
+</UL>
+
+<P><STRONG><a name="[e1]"></a>cal_next</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, data_format.o(i.cal_next))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = cal_next
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KMP
+</UL>
+
+<P><STRONG><a name="[dd]"></a>ReadPrefixToTx</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, config.o(i.ReadPrefixToTx))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetPrefixLen
+</UL>
+
+<P><STRONG><a name="[120]"></a>SendWireless</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, config.o(i.SendWireless))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = SendWireless &rArr; BSPWirelessWriteBytes &rArr; LT8920Send &rArr; Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlaySuccess
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPlayFail
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWirelessWriteBytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendData
+</UL>
+
+<P><STRONG><a name="[f1]"></a>ParseCmd</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, dataparse.o(i.ParseCmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ParseCmd &rArr; strlen
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Parsing
+</UL>
+
+<P><STRONG><a name="[f6]"></a>ParsingHeadLenMdy</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, dataparse.o(i.ParsingHeadLenMdy))
+<BR><BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Parsing
+</UL>
+
+<P><STRONG><a name="[f4]"></a>ParsingPrefixMdychar</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, dataparse.o(i.ParsingPrefixMdychar))
+<BR><BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Parsing
+</UL>
+
+<P><STRONG><a name="[f5]"></a>ParsingSuffixMdychar</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, dataparse.o(i.ParsingSuffixMdychar))
+<BR><BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Parsing
+</UL>
+
+<P><STRONG><a name="[f7]"></a>ParsingTailLenMdy</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, dataparse.o(i.ParsingTailLenMdy))
+<BR><BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Parsing
+</UL>
+
+<P><STRONG><a name="[f8]"></a>parsing_string_MDYCHAR</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, dataparse.o(i.parsing_string_MDYCHAR))
+<BR><BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Parsing
+</UL>
+
+<P><STRONG><a name="[144]"></a>system_clock_72m_hxtal</STRONG> (Thumb, 154 bytes, Stack size 0 bytes, system_gd32f1x0.o(i.system_clock_72m_hxtal))
+<BR><BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
+</UL>
+
+<P><STRONG><a name="[127]"></a>system_clock_config</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_gd32f1x0.o(i.system_clock_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = system_clock_config
+</UL>
+<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_72m_hxtal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[181]"></a>usbd_intf_esof</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, usbd_int.o(i.usbd_intf_esof))
+<BR><BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_isr
+</UL>
+
+<P><STRONG><a name="[179]"></a>usbd_intf_lpst</STRONG> (Thumb, 340 bytes, Stack size 32 bytes, usbd_int.o(i.usbd_intf_lpst))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = usbd_intf_lpst &rArr; usbd_setup_transaction &rArr; usbd_device_class_request &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_rx
+<LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_data_read
+<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_setup_transaction
+<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_out_transaction
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_in_transaction
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_isr
+</UL>
+
+<P><STRONG><a name="[182]"></a>usbd_intf_reset</STRONG> (Thumb, 130 bytes, Stack size 8 bytes, usbd_int.o(i.usbd_intf_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usbd_intf_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_isr
+</UL>
+
+<P><STRONG><a name="[180]"></a>usbd_intf_sof</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, usbd_int.o(i.usbd_intf_sof))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usbd_intf_sof
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_isr
+</UL>
+
+<P><STRONG><a name="[17d]"></a>usbd_intf_suspend</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, usbd_int.o(i.usbd_intf_suspend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usbd_intf_suspend &rArr; usbd_suspend
+</UL>
+<BR>[Calls]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_suspend
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_isr
+</UL>
+
+<P><STRONG><a name="[17f]"></a>usbd_intf_wakeup</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, usbd_int.o(i.usbd_intf_wakeup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = usbd_intf_wakeup &rArr; resume_mcu &rArr; lowpower_mode_exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;resume_mcu
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_isr
+</UL>
+
+<P><STRONG><a name="[16c]"></a>lowpower_mode_exit</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, usbd_pwr.o(i.lowpower_mode_exit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lowpower_mode_exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_system_clock_source_get
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_system_clock_source_config
+<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_osci_on
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_flag_get
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_lowpower_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;resume_mcu
+</UL>
+
+<P><STRONG><a name="[4]"></a>usbd_clearfeature</STRONG> (Thumb, 276 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_clearfeature))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = usbd_clearfeature &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_clear_stall
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[10]"></a>usbd_configuration_descriptor_get</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, usbd_std.o(i.usbd_configuration_descriptor_get))
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[f]"></a>usbd_device_descriptor_get</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, usbd_std.o(i.usbd_device_descriptor_get))
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[a]"></a>usbd_getconfiguration</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_getconfiguration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = usbd_getconfiguration &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[8]"></a>usbd_getdescriptor</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, usbd_std.o(i.usbd_getdescriptor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = usbd_getdescriptor &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[c]"></a>usbd_getinterface</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_getinterface))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = usbd_getinterface &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[3]"></a>usbd_getstatus</STRONG> (Thumb, 250 bytes, Stack size 24 bytes, usbd_std.o(i.usbd_getstatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = usbd_getstatus &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_tx
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[5]"></a>usbd_reserved</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, usbd_std.o(i.usbd_reserved))
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[7]"></a>usbd_setaddress</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_setaddress))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = usbd_setaddress &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[b]"></a>usbd_setconfiguration</STRONG> (Thumb, 320 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_setconfiguration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = usbd_setconfiguration &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[9]"></a>usbd_setdescriptor</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, usbd_std.o(i.usbd_setdescriptor))
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[6]"></a>usbd_setfeature</STRONG> (Thumb, 242 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_setfeature))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = usbd_setfeature &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_ep_stall
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[d]"></a>usbd_setinterface</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, usbd_std.o(i.usbd_setinterface))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = usbd_setinterface &rArr; usbd_enum_error &rArr; usbd_ep_stall
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usbd_enum_error
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[11]"></a>usbd_string_descriptor_get</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, usbd_std.o(i.usbd_string_descriptor_get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usbd_string_descriptor_get
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[e]"></a>usbd_synchframe</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, usbd_std.o(i.usbd_synchframe))
+<BR>[Address Reference Count : 1]<UL><LI> usbd_std.o(.data)
+</UL>
+<P><STRONG><a name="[8f]"></a>FlashWriteNoCheck</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, bspeeprom.o(i.FlashWriteNoCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fmc_word_program
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+
+<P><STRONG><a name="[15e]"></a>BSPPutArray</STRONG> (Thumb, 184 bytes, Stack size 16 bytes, bspusb.o(i.BSPPutArray))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = BSPPutArray &rArr; keybroad_value &rArr; hid_report_send &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_report_send
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;keybroad_value
+</UL>
+<BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWire
+</UL>
+
+<P><STRONG><a name="[165]"></a>USB_connect</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, bspusb.o(i.USB_connect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USB_connect
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPUsbInit
+</UL>
+
+<P><STRONG><a name="[162]"></a>USB_gpio_config</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, bspusb.o(i.USB_gpio_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = USB_gpio_config &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exti_interrupt_flag_clear
+<LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exti_init
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPUsbInit
+</UL>
+
+<P><STRONG><a name="[164]"></a>USB_int_config</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bspusb.o(i.USB_int_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = USB_int_config &rArr; nvic_irq_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPUsbInit
+</UL>
+
+<P><STRONG><a name="[161]"></a>USB_rcu_config</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, bspusb.o(i.USB_rcu_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USB_rcu_config
+</UL>
+<BR>[Calls]<UL><LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_usbd_clock_config
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPUsbInit
+</UL>
+
+<P><STRONG><a name="[163]"></a>Usbd_core_init</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, bspusb.o(i.Usbd_core_init))
+<BR><BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPUsbInit
+</UL>
+
+<P><STRONG><a name="[15f]"></a>keybroad_value</STRONG> (Thumb, 7580 bytes, Stack size 16 bytes, bspusb.o(i.keybroad_value))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = keybroad_value &rArr; hid_report_send &rArr; usbd_ep_tx &rArr; usbd_ep_data_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hid_report_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPPutArray
+</UL>
+
+<P><STRONG><a name="[14b]"></a>_assignment</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, bspscan.o(i._assignment))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _assignment
+</UL>
+<BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_CODE_TYPE_ID
+</UL>
+
+<P><STRONG><a name="[133]"></a>read_suffix_to_tx</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, bspscan.o(i.read_suffix_to_tx))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = read_suffix_to_tx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+
+<P><STRONG><a name="[143]"></a>sending_in_scanning</STRONG> (Thumb, 210 bytes, Stack size 8 bytes, bspscan.o(i.sending_in_scanning))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = sending_in_scanning &rArr; BSPKeyScanInContinual
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWatchDogReset
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPKeyScanInContinual
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_start
+</UL>
+
+<P><STRONG><a name="[132]"></a>usart_03_resend</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, bspscan.o(i.usart_03_resend))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_QR_module_data
+</UL>
+
+<P><STRONG><a name="[14c]"></a>zero_assignment</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, bspscan.o(i.zero_assignment))
+<BR><BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_CODE_TYPE_ID
+</UL>
+
+<P><STRONG><a name="[78]"></a>beep_init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, bspplay.o(beep_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = beep_init &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_af_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time1_init_pwm
+</UL>
+
+<P><STRONG><a name="[7d]"></a>ADC0_GPIO_Configuration</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, bspbat.o(i.ADC0_GPIO_Configuration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = ADC0_GPIO_Configuration &rArr; gpio_mode_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[88]"></a>BatteryStable</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, bspbat.o(i.BatteryStable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = BatteryStable &rArr; ReadBattery
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBattery
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[8a]"></a>ReadBattery</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, bspbat.o(i.ReadBattery))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ReadBattery
+</UL>
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_software_trigger_enable
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_regular_data_read
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_flag_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatLowPowerCheck
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BatteryStable
+</UL>
+
+<P><STRONG><a name="[7f]"></a>ad0_rcc_config</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, bspbat.o(i.ad0_rcc_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ad0_rcc_config
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_adc_clock_config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPBatCheckInit
+</UL>
+
+<P><STRONG><a name="[e6]"></a>BroadcastInit</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, lt8920.o(i.BroadcastInit))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920CreateConnect
+</UL>
+
+<P><STRONG><a name="[b5]"></a>CRCCal</STRONG> (Thumb, 68 bytes, Stack size 12 bytes, lt8920.o(i.CRCCal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SearchChannel
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RequestConnectInit
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InformSuccess
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DummyInit
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DatasDivide
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataArrayChannelSet
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCrc
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelHop
+</UL>
+
+<P><STRONG><a name="[b3]"></a>ChannelHop</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, lt8920.o(i.ChannelHop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = ChannelHop &rArr; DataArrayChannelSet &rArr; CRCCal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataArrayChannelSet
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send
+</UL>
+
+<P><STRONG><a name="[b6]"></a>ChannelRand</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, lt8920.o(i.ChannelRand))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ChannelRand &rArr; srand
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920CreateConnect
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+</UL>
+
+<P><STRONG><a name="[b8]"></a>ChannelSync</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, lt8920.o(i.ChannelSync))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = ChannelSync &rArr; SendPkt &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send
+</UL>
+
+<P><STRONG><a name="[ba]"></a>CheckCrc</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, lt8920.o(i.CheckCrc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = CheckCrc &rArr; CRCCal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitingSuccess
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitConnectAck
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitBroadcastAck
+</UL>
+
+<P><STRONG><a name="[bb]"></a>Connect</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, lt8920.o(i.Connect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = Connect &rArr; WaitConnectAck &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWatchDogReset
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitConnectAck
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RequestConnectInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920CreateConnect
+</UL>
+
+<P><STRONG><a name="[b4]"></a>DataArrayChannelSet</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, lt8920.o(i.DataArrayChannelSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DataArrayChannelSet &rArr; CRCCal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelHop
+</UL>
+
+<P><STRONG><a name="[bf]"></a>DatasDivide</STRONG> (Thumb, 286 bytes, Stack size 24 bytes, lt8920.o(i.DatasDivide))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DatasDivide &rArr; CRCCal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitingCal
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PidIncrease
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Send
+</UL>
+
+<P><STRONG><a name="[c2]"></a>DummyInit</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, lt8920.o(i.DummyInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DummyInit &rArr; CRCCal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920CreateConnect
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+</UL>
+
+<P><STRONG><a name="[db]"></a>GetPid</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, lt8920.o(i.GetPid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GetPid &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPidSPid
+</UL>
+
+<P><STRONG><a name="[de]"></a>GetSPid</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, lt8920.o(i.GetSPid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GetSPid &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPidSPid
+</UL>
+
+<P><STRONG><a name="[df]"></a>InformSuccess</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, lt8920.o(i.InformSuccess))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = InformSuccess &rArr; SendPkt &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send
+</UL>
+
+<P><STRONG><a name="[ea]"></a>Lt8920SpiInit</STRONG> (Thumb, 166 bytes, Stack size 32 bytes, lt8920.o(i.Lt8920SpiInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_af_set
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_enable
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Init
+</UL>
+
+<P><STRONG><a name="[ef]"></a>ModeReceive</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, lt8920.o(i.ModeReceive))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1us
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiLt8920Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitingSuccess
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitConnectAck
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitBroadcastAck
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReceivedData
+</UL>
+
+<P><STRONG><a name="[c1]"></a>PidIncrease</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, lt8920.o(i.PidIncrease))
+<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DatasDivide
+</UL>
+
+<P><STRONG><a name="[e5]"></a>ReadPidSPid</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, lt8920.o(i.ReadPidSPid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = ReadPidSPid &rArr; GetSPid &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSPid
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetPid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+</UL>
+
+<P><STRONG><a name="[119]"></a>ReadPkt</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, lt8920.o(i.ReadPkt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = ReadPkt &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1us
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitingSuccess
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitConnectAck
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitBroadcastAck
+</UL>
+
+<P><STRONG><a name="[e4]"></a>ReadSrcDest</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lt8920.o(i.ReadSrcDest))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ReadSrcDest &rArr; BSPEepromRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+</UL>
+
+<P><STRONG><a name="[11b]"></a>ReceivedData</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, lt8920.o(i.ReceivedData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_LT8920_Read
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModeReceive
+</UL>
+<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitingSuccess
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitConnectAck
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitBroadcastAck
+</UL>
+
+<P><STRONG><a name="[bc]"></a>RequestConnectInit</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lt8920.o(i.RequestConnectInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RequestConnectInit &rArr; CRCCal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Connect
+</UL>
+
+<P><STRONG><a name="[11c]"></a>SPI_LT8920_Read</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, lt8920.o(i.SPI_LT8920_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = SPI_LT8920_Read &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReceivedData
+</UL>
+
+<P><STRONG><a name="[e9]"></a>SavePid</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, lt8920.o(i.SavePid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SavePid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920SavePidSpid
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920FactoryReset
+</UL>
+
+<P><STRONG><a name="[e8]"></a>SaveSPid</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, lt8920.o(i.SaveSPid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SaveSPid &rArr; BSPEepromWrite &rArr; FlashWriteNoCheck &rArr; fmc_word_program &rArr; fmc_ready_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPEepromWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920SavePidSpid
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920FactoryReset
+</UL>
+
+<P><STRONG><a name="[e7]"></a>SearchChannel</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, lt8920.o(i.SearchChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = SearchChannel &rArr; WaitBroadcastAck &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWatchDogReset
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitBroadcastAck
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRCCal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920CreateConnect
+</UL>
+
+<P><STRONG><a name="[eb]"></a>Send</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, lt8920.o(i.Send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = Send &rArr; SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWaitingDividedDataNew
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InformSuccess
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelSync
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelHop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Send
+</UL>
+
+<P><STRONG><a name="[b9]"></a>SendPkt</STRONG> (Thumb, 150 bytes, Stack size 24 bytes, lt8920.o(i.SendPkt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = SendPkt &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1us
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWatchDogReset
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiLt8920Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920DummySend
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWaitingDividedDataNew
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SearchChannel
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InformSuccess
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Connect
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChannelSync
+</UL>
+
+<P><STRONG><a name="[11e]"></a>SendWaitingDividedDataNew</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, lt8920.o(i.SendWaitingDividedDataNew))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = SendWaitingDividedDataNew &rArr; WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSPWatchDogReset
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitingSuccess
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send
+</UL>
+
+<P><STRONG><a name="[e3]"></a>SpiLt8920Write</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, lt8920.o(i.SpiLt8920Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1us
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Config
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModeReceive
+</UL>
+
+<P><STRONG><a name="[11a]"></a>SpiWrite</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, lt8920.o(i.SpiWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1us
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_i2s_flag_get
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_i2s_data_transmit
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_i2s_data_receive
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LT8920Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiLt8920Write
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendPkt
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_LT8920_Read
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPkt
+</UL>
+
+<P><STRONG><a name="[11d]"></a>WaitBroadcastAck</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, lt8920.o(i.WaitBroadcastAck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = WaitBroadcastAck &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReceivedData
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPkt
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModeReceive
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCrc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SearchChannel
+</UL>
+
+<P><STRONG><a name="[be]"></a>WaitConnectAck</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, lt8920.o(i.WaitConnectAck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = WaitConnectAck &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReceivedData
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPkt
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModeReceive
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCrc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Connect
+</UL>
+
+<P><STRONG><a name="[c0]"></a>WaitingCal</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, lt8920.o(i.WaitingCal))
+<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DatasDivide
+</UL>
+
+<P><STRONG><a name="[122]"></a>WaitingSuccess</STRONG> (Thumb, 160 bytes, Stack size 16 bytes, lt8920.o(i.WaitingSuccess))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = WaitingSuccess &rArr; ReceivedData &rArr; ModeReceive &rArr; SpiLt8920Write &rArr; SpiWrite &rArr; LT8920Init &rArr; Lt8920SpiInit &rArr; gpio_output_options_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReceivedData
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadPkt
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModeReceive
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCrc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendWaitingDividedDataNew
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
